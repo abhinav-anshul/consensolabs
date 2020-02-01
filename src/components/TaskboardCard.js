@@ -9,13 +9,16 @@ const TaskboardCard = ({ text, id, index }) => {
     <Draggable draggableId={String(id)} index={index}>
       {provided => (
         <div
+          className="taskboard_container"
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
         >
           <Card>
             <CardContent>
-              <Typography gutterBottom>{text}</Typography>
+              <Typography style={{ fontSize: "1.5rem" }} gutterBottom>
+                {text}
+              </Typography>
             </CardContent>
           </Card>
         </div>

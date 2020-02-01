@@ -8,11 +8,12 @@ const TaskboardList = ({ title, cards, listID }) => {
     <Droppable droppableId={String(listID)}>
       {provided => (
         <div
+          className="taskboardlist_container"
           {...provided.droppableProps}
           ref={provided.innerRef}
           style={styles.container}
         >
-          <h3>{title}</h3>
+          <div className="sub-heading">{title}</div>
           {cards.map((card, index) => (
             <TaskboardCard
               key={card.id}

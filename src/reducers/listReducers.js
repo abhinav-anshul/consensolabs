@@ -10,11 +10,11 @@ const initialState = [
     cards: [
       {
         id: `card-${0}`,
-        text: "this is a card"
+        text: "Migrate Java code to Kotlin"
       },
       {
         id: `card-${1}`,
-        text: "this is the second card"
+        text: "Refactor contracts"
       }
     ]
   },
@@ -24,11 +24,11 @@ const initialState = [
     cards: [
       {
         id: `card-${2}`,
-        text: "doing card 1"
+        text: "Front end integration with cordova"
       },
       {
         id: `card-${3}`,
-        text: "doing card 2"
+        text: "Use Cordova token sdk for settlement"
       }
     ]
   },
@@ -38,15 +38,15 @@ const initialState = [
     cards: [
       {
         id: `card-${4}`,
-        text: "done this is a card"
+        text: "Managing access control for node in flows"
       },
       {
         id: `card-${5}`,
-        text: "done this is the second card"
+        text: "Issue #3 pushed to Git"
       },
       {
         id: `card-${6}`,
-        text: "done this is the second card"
+        text: "Drag and drop added to third party"
       }
     ]
   },
@@ -56,15 +56,15 @@ const initialState = [
     cards: [
       {
         id: `card-${7}`,
-        text: "rejected done this is a card"
+        text: "Issue #43 rejected due to stability"
       },
       {
         id: `card-${8}`,
-        text: "rejected done this is the second card"
+        text: "Token id replaced"
       },
       {
         id: `card-${9}`,
-        text: "rejected done this is the second card"
+        text: "Downgraded v1.7 to v1.6"
       }
     ]
   }

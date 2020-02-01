@@ -62,7 +62,18 @@ class TaskboardActionButton extends React.Component {
     const buttonText = list ? "Add another list" : "Add another card";
 
     return (
-      <div onClick={this.openForm}>
+      <div
+        style={{
+          display: "flex",
+          paddingLeft: "1.5rem",
+          alignItems: "center",
+          fontSize: "1.5rem",
+          cursor: "pointer",
+          paddingTop: "1rem",
+          paddingBottom: "1rem"
+        }}
+        onClick={this.openForm}
+      >
         <Icon>+</Icon>
         <p>{buttonText}</p>
       </div>
@@ -102,15 +113,20 @@ class TaskboardActionButton extends React.Component {
             }}
           />
         </Card>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column"
+          }}
+        >
           <Button
             onMouseDown={list ? this.handleAddList : this.handleAddCard}
             variant="contained"
-            style={{ color: "white", backgroundColor: "#5aac44" }}
+            style={{ color: "white", backgroundColor: "black" }}
           >
             {buttonTitle}
           </Button>
-          <Icon style={{ marginLeft: 8, cursor: "pointer" }}>X</Icon>
+          {/* <Icon style={{ marginLeft: 8, cursor: "pointer" }}>X</Icon> */}
         </div>
       </div>
     );
