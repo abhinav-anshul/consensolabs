@@ -22,7 +22,22 @@ const TaskboardCard = ({ text, id, index, dispatch, listID }) => {
               <Typography style={{ fontSize: "1.5rem" }} gutterBottom>
                 {text}
               </Typography>
-              <button onClick={() => dispatch(deleteCard(listID, id))}>
+              <button
+                style={{
+                  fontSize: "1.3rem",
+                  outline: "none",
+                  border: "none",
+                  backgroundColor: "black",
+                  color: "white",
+                  cursor: "pointer",
+                  paddingLeft: "0.8rem",
+                  paddingRight: "0.8rem",
+                  paddingTop: "0.2rem",
+                  paddingBottom: "0.2rem",
+                  textTransform: "uppercase"
+                }}
+                onClick={() => dispatch(deleteCard(listID, id))}
+              >
                 Delete
               </button>
             </CardContent>
