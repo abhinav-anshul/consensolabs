@@ -31,14 +31,14 @@ const TaskboardCard = ({ text, id, index, sample, cardId }) => {
             </CardContent>
           </Card>
           {/* //delete added */}
-          {/* <button
-            onClick={(cardId, props, sample, dispatch ) => {
+          <button
+            onClick={(cardId, props, sample, dispatch) => {
               //const { dispatch } = this.props;
               dispatch(deleteCard(cardId));
             }}
           >
             DELETE
-          </button> */}
+          </button>
           {/* ////////////////////// */}
         </div>
       )}
