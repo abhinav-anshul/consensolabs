@@ -7,7 +7,7 @@ export const addCard = (listID, text) => {
   };
 };
 //delete card added
-export const deleteCard = cardId => ({
+export const deleteCard = (listId, cardId) => ({
   type: CONSTANTS.DELETE_CARD,
-  payload: { cardId }
+  payload: { listId, cardId }
 });

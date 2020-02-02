@@ -7,13 +7,7 @@ import { connect } from "react-redux";
 
 import { deleteCard } from "../actions";
 
-const TaskboardCard = ({ text, id, index, sample, cardId }) => {
-  // handleClickDelete = () => {
-  //   // const { dispatch } = this.props;
-  //   // dispatch(deleteCard(cardId));
-  //   console.log("clicked");
-  // };
-
+const TaskboardCard = ({ text, id, index, dispatch, listID }) => {
   return (
     <Draggable draggableId={String(id)} index={index}>
       {provided => (
@@ -28,18 +22,11 @@ const TaskboardCard = ({ text, id, index, sample, cardId }) => {
               <Typography style={{ fontSize: "1.5rem" }} gutterBottom>
                 {text}
               </Typography>
+              <button onClick={() => dispatch(deleteCard(listID, id))}>
+                Delete
+              </button>
             </CardContent>
           </Card>
-          {/* //delete added */}
-          <button
-            onClick={(cardId, props, sample, dispatch) => {
-              //const { dispatch } = this.props;
-              dispatch(deleteCard(cardId));
-            }}
-          >
-            DELETE
-          </button>
-          {/* ////////////////////// */}
         </div>
       )}
     </Draggable>

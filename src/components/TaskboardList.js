@@ -20,6 +20,7 @@ const TaskboardList = ({ title, cards, listID }) => {
               index={index}
               text={card.text}
               id={card.id}
+              listID={listID}
             />
           ))}
           <TaskboardActionButton listID={listID} />

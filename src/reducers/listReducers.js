@@ -74,12 +74,17 @@ const listReducer = (state = initialState, action) => {
   switch (action.type) {
     //delete added
     case CONSTANTS.DELETE_CARD: {
-      return {
-        ...state,
-        cards: state.cards.filter(({ id }) => id !== action.payload.cardId)
-      };
-    }
+      return state.map(list => {
+        if (list.id === action.payload.listId) {
+          return {
+            ...list,
+            cards: list.cards.filter(({ id }) => id !== action.payload.cardId)
+          };
+        }
 
+        return list;
+      });
+    }
     case CONSTANTS.ADD_LIST:
       const newList = {
         title: action.payload.text, ///here
