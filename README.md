@@ -28,12 +28,15 @@ You will also see any lint errors in the console.
 1. node-sass : CSS pre-processor for styling.
 2. react-bautiful-dnd : Used to drag and drop cards in this application.
 3. redux/react-redux : Used for state management.
+4. redux-persistent : Used for persisting data in the browser.
 
 
-## Basic Functionality :
+## Functionality :
 1. 4 columns (TODO, DOING, DONE and REJECTED) to represent the status of each task.
 2. A button to create a new task that pops up onclick.
 3. The tasks created can be moved (dragged and dropped) to any of the columns to change the status.
+4. All data are persistent and does not get lost after browser refresh.
+5. A delete button is provided  to delete the card if required so.
 
 
 ## NOTE :
